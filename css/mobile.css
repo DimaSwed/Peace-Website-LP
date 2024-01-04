@@ -1,0 +1,329 @@
+@media (hover: hover) and (pointer: fine) {
+	.footer__item-about-link:hover::before,
+	.footer__item-link:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.container {
+		max-width: 1299px;
+	}
+
+	/* HEADER */
+
+	.header__content {
+		margin-right: 5em;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.container {
+		max-width: 1099px;
+	}
+
+	/* HEADER */
+
+	.header__content {
+		margin-right: 1em;
+		padding-left: 1em;
+	}
+
+	.navbar__menu-item {
+		margin-right: 2em;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		max-width: 1023px;
+	}
+
+	/* HEADER */
+
+	.header__content {
+		margin-right: 0em;
+		padding-left: 0.5em;
+	}
+
+	.navbar__menu-item {
+		margin-right: 1em;
+	}
+
+	/* FAQ */
+
+	.faq {
+		padding: 100px 15px 100px 15px;
+	}
+
+	/* FOOTER */
+	.footer__inner {
+		justify-content: space-around;
+		padding: 50px 15px 50px 15px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		max-width: 899px;
+	}
+
+	body {
+		font-size: 13px;
+	}
+
+	.header__burger {
+		display: flex;
+	}
+
+	.header__navbar {
+		display: none;
+		flex-direction: column;
+		position: fixed;
+		height: 100%;
+		width: 50%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+		overflow-y: auto;
+		padding: 50px 40px;
+		background-color: #edf8f9;
+		animation: burgerAnimation 0.4s;
+	}
+
+	.navbar__menu {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+
+	@keyframes burgerAnimation {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.container {
+		max-width: 819px;
+	}
+
+	body {
+		font-size: 12.5px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		max-width: 767px;
+	}
+	body {
+		font-size: 12px;
+	}
+	.header__burger {
+		margin-left: 26em;
+	}
+
+	/* ORACLE */
+	.oracle__grid {
+		gap: 80px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.container {
+		max-width: 719px;
+	}
+
+	/* HEADER */
+
+	.logo {
+		margin-bottom: 5em;
+	}
+
+	.header__aside {
+		padding: 2em 0;
+	}
+
+	.header__aside-title {
+		line-height: 70px;
+	}
+
+	/* FAQ */
+	.faq {
+		padding: 50px 15px 50px 15px;
+	}
+
+	.faq__title {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.container {
+		max-width: 539px;
+	}
+
+	body {
+		font-size: 11px;
+	}
+
+	/* HEADER */
+
+	.logo {
+		max-width: 300px;
+	}
+
+	.header__burger {
+		margin-left: 17em;
+	}
+
+	/* ORACLE */
+
+	.oracle__grid {
+		gap: 50px;
+	}
+
+	.oracle__grid-item {
+		text-align: center;
+	}
+
+	.oracle__grid-item-title {
+		align-self: center;
+	}
+
+	/* FOOTER */
+
+	.footer__inner {
+		padding: 0 15px 30px 15px;
+	}
+
+	.footer__item-copyright {
+		margin-bottom: 2em;
+	}
+
+	.footer__item-links {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+
+	.footer__item-subheading {
+		margin-top: 2.1em;
+		margin-bottom: 1em;
+	}
+
+	.social_icons {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.container {
+		max-width: 429px;
+	}
+
+	/* HEADER */
+
+	.logo {
+		max-width: 270px;
+		margin-bottom: 3em;
+	}
+
+	.header__main-title {
+		font-size: 7.64em;
+	}
+
+	.header__burger {
+		margin-left: 10em;
+	}
+
+	.header__aside-title {
+		font-size: 3.64em;
+		line-height: 50px;
+	}
+
+	/* ORACLE */
+
+	.oracle__title {
+		line-height: 60px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		font-size: 2.78em;
+	}
+
+	/* FAQ */
+
+	.faq__title {
+		font-size: 2.57em;
+	}
+
+	.faq__content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* FOOTER */
+
+	.footer__inner {
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
+
+	.footer__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.social_icons {
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.container {
+		max-width: 399px;
+	}
+
+	/* HEADER */
+
+	.logo {
+		max-width: 240px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.container {
+		max-width: 374px;
+	}
+
+	/* HEADER */
+
+	.logo {
+		max-width: 210px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.container {
+		max-width: 319px;
+	}
+
+	/* HEADER */
+	.header__burger {
+		margin-left: 4em;
+	}
+}
